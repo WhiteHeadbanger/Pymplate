@@ -1,0 +1,45 @@
+#container {
+  width: 1000px;
+  height: 680px;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+}
+.flex-container {  
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #cccccc;
+  
+}
+.droparea {
+ flex-grow: 1;
+ flex-direction: column;
+}
+#droparea {
+ background-color: #ebe7e7;
+}
+
+.submit {
+  font-size: 30px;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.template {
+   margin: 10px;
+   height: 80px;
+   width: 200px;
+   background-color: #54a1c0c9
+}
+
+.template > label {
+  font-size: 0.7rem;
+}
+
+.template > input {
+  margin: 1 5px 1 5px;
+  
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+<body>
+    {% block content %}
+    <section id="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="flex-container">
+            <div class="template" draggable="true" ondragstart="drag(event)" id="drag1" name="class">
+              <div class="title">Class Template</div>
+              <label for="classname" id="classname">Name</label><input class="classname">
+              <label for="argsname" id="argsname">Args</label><input class="argsname">
+            </div>
+            <div class="template" draggable="true" ondragstart="drag(event)" id="drag2" name="function">
+              <div class="title">Function Template</div>
+              <label for="funcname" id="funcname">Name</label><input class="funcname">
+              <label for="argsname" id="argsname">Args</label><input class="argsname">
+            </div>
+        </div>
+        <div class="droparea" id="droparea" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+      </section>
+      <div id="buttons">
+        <input type="button" class="submit" value="Generate Code">
+      </div>
+    {% endblock %}
+</body>
+<script type=text/javascript src="{{ url_for('static', filename='js/dnd.js') }}"></script>
+</html>
